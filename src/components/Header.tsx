@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaDiscord, FaGithub, FaLinkedin, FaMailBulk, FaPhone, FaTwitter, FaWhatsapp} from 'react-icons/fa';
+import { FaDiscord, FaDropbox, FaGithub, FaLinkedin, FaMailBulk, FaPhone, FaTwitter, FaWhatsapp} from 'react-icons/fa';
 import '../styles/Header.scss';
 
 const Header: React.FC = () => {
@@ -22,7 +22,9 @@ const Header: React.FC = () => {
             Developer
           </div>
           </div>
-
+      <div className="btn-icon" onClick={handleClick}>
+        <FaDropbox/>
+      </div>
         </div>
         <div className="right-header">
           <h3 className="btn-txt" onClick={handleClick}>
