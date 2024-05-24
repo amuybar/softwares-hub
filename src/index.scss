@@ -13,8 +13,8 @@ body {
   font-family: 'Arial, sans-serif';
   line-height: 1.6;
   background-color: hsl(0, 0%, 7%);
+  min-width: 90vw;
   overflow-x: hidden;
-  min-width: 100vw;
   color: #fff;
 }
 
@@ -27,14 +27,32 @@ a {
   }
 }
 
+.home{
+  display: flex;
+  flex-direction: row;
+}
 
 .home-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 @media (max-width: 1200px) {
+.home{
+  display: flex;
+  flex-direction: column;
+}
   .home-container {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 569px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container {
+    flex-direction: column;
   }
 }

@@ -6,13 +6,13 @@ import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div className='home'>
       <Header />
       <div className="home-container">
       <Hero />
       <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
