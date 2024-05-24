@@ -1,0 +1,41 @@
+.latest-works {
+  background: #111;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .works-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .work-item {
+      background: #222;
+      padding: 1rem;
+      border-radius: 5px;
+      width: 300px;
+      text-align: left;
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #ccc;
+      }
+    }
+  }
+}

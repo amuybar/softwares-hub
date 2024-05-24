@@ -1,0 +1,35 @@
+.testimonials {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-item {
+    background: #222;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+      color: #ccc;
+    }
+  }
+}

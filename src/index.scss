@@ -1,0 +1,33 @@
+// src/assets/styles/globals.scss
+
+// CSS Reset (You can use a popular reset or normalize.css)
+// Example: Eric Meyer's Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Base body styles
+body {
+  font-family: 'Arial, sans-serif';
+  line-height: 1.6;
+  background-color: #292929;
+  color: #fff;
+}
+
+// Links
+a {
+  color: #27ae60;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Utility classes (if any)
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
