@@ -1,36 +1,181 @@
 .header {
-  background: #111;
-  padding: 1rem 0;
-
+  padding: 20px;
+  margin: 60px;
+  background-color: hsl(218, 14%, 11%);
+  border-radius: 20px;
+  border: 1px solid hsl(221, 15%, 22%);
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
+    justify-content: space-between;
 
-  .logo {
-    font-size: 1.5rem;
-    color: #fff;
+    .left-header {
+      display: flex;
+      align-items: center;
+      .logo {
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: hsl(218, 14%, 11%);
+        border-radius: 50%;
+        border: 1px solid hsl(221, 15%, 22%);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      
+        h1 {
+          font-size: 44px;
+          margin-top: 10px;
+          color: #0099ff;
+        }
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2fr;
 
-    a {
-      text-decoration: none;
-      color: inherit;
+
+        a {
+          text-decoration: none;
+          color: #0099ff;
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .dev {
+          font-size: 14px;
+          border:1px solid  #333333;
+          background-color:rgb(87, 86, 86,0.2);
+          border-radius: 5px;
+          padding: 5px 10px;
+          text-align: center;
+          margin-top: 10px;
+          &:hover {
+            background-color: hsl(218, 14%, 11%);
+            color: #ffffff;
+          }
+          color: #0099ff;
+        }
+      }
+    }
+    .right-header {
+      .btn-txt {
+        position: absolute;
+        top: 62px;
+        right: 62px;
+        width: 200px;
+        color: #03e2ff;
+        padding: 10px;
+        border-radius: 0 30px;
+        font-size: 18px;
+        border-bottom:1px solid #03e2ff;
+        border-left:1px solid #03e2ff;
+        cursor: pointer;
+        background-color: hsl(218, 14%, 11%);
+        &:hover {
+          background-color: transparent;
+          color: #ffffff;
+          border-bottom:1px solid #ffffff;
+          border-left:1px solid #ffffff;
+          transition: all 0.3s ease-in-out;
+          transform: scale(1.02);
+
+        }
+      }
     }
   }
+  .contact {
+    margin-top: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    // add animation 
+    animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+    transition: all 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .line {
+      height: 1px;
+      background-color: #424242;
+      margin: 50px 10px;
+    }
+    .cont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 0;
+      .email,
+      .phone,
+      .whatsapp {
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: #c4c4c4;
+          margin-left: 10px;
+          &:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #042033;
+            border-radius: 5px;
+            padding: 5px 10px;
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+            
+          }
+        }
+        .email-icon,
+        .phone-icon,
+        .whatsapp-icon {
 
-    li a {
-      text-decoration: none;
-      color: #fff;
-      transition: color 0.3s;
-
-      &:hover {
-        color: #27ae60;
+          border-bottom: 1px solid #424242;
+          border-left: 1px solid #424242;
+          border-radius: 12px;
+          padding: 10px;
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: #0099ff;
+          }
+          &:hover {
+            background-color: #0099ff;
+            color: #ffffff;
+            svg{
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .social {
+      display: flex;
+      align-items: start;
+      justify-content: end;
+      svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-right: 10px;
+        fill: #0095f8;
+        &:last-child {
+          margin-left: 0;
+        }
       }
     }
   }
 }
+
+

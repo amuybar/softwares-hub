@@ -12,7 +12,9 @@
 body {
   font-family: 'Arial, sans-serif';
   line-height: 1.6;
-  background-color: #292929;
+  background-color: hsl(0, 0%, 7%);
+  overflow-x: hidden;
+  min-width: 100vw;
   color: #fff;
 }
 
@@ -25,9 +27,14 @@ a {
   }
 }
 
-// Utility classes (if any)
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .home-container {
+    flex-direction: column-reverse;
+  }
 }
